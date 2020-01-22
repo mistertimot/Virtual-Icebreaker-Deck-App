@@ -1,0 +1,11 @@
+var deck = [
+		{question: "Who was your first love and when?", category: "Experiences"}, 
+		{question: "What's something you will NEVER do again?", category: "Experiences"},
+		{question: "What is your worst habit?", category: "Experiences"},
+		{question: "What is one family tradition you would like to carry on in the future?", category: "Life"},
+		{question: "What important truth do very few people agree with you on?", category: "Life"},
+		{question: "Who in your life inspires you to be better?", category: "Life"},
+		{question: "If you could have any super power, what would you choose?", category: "If you could..."},
+		{question: "If you could never work again, how would you spend your time?", category: "If you could..."},
+		{question: "If you could buy your dream house, what is one weird room or feature you would have?", category: "If you could..."}
+		];

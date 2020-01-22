@@ -1,0 +1,41 @@
+<% include partials/header %>
+	<div class="container">
+		<header class="jumbotron">
+			<h1>My Cards</h1>
+			<p>This is where you view all the cards that will be shuffled in the deck. This is like the virtual deck.</p>
+			<p>
+				<a class="btn btn-info btn-lg" href="/Ice">Open Deck</a>
+			</p>
+			
+		</header>
+		<p>
+			<a class="btn btn-success btn-lg" href="/deck/new">Add a New Card</a>
+		</p>
+		
+		<div class="row" style="flex: display; flex-wrap: wrap;">
+		<% card.forEach(function(card){ %>
+			<div class="col-sm-6 col-md-6 col-lg-4">
+				<div class="card" style="width: 18rem; height: ">
+ 					 <div class="card-body">
+   	 					<h5 class="card-title"><%= card.category %></h5>
+  		 				 <p class="card-text"><%= card.question %></p>
+						 <p>
+							<a class="btn btn-warning btn-md" href="/deck/<%=card._id%>/edit">Edit</a>
+						</p>
+  					</div>
+				</div>
+			</div>
+			
+	 	<% }); %>
+		</div>
+		<p>
+			<a class="btn btn-danger btn-md" href="/">Go back</a>
+		</p>
+
+
+		
+		
+		
+		<% include ./partials/footer %>
+	</div>
+
