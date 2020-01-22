@@ -5,7 +5,6 @@ var express = require("express"),
 	Card = require("./models/card"), 
 	methodOverride = require("method-override");
 
-
 mongoose.connect("mongodb://localhost/icebreaker", {useNewUrlParser: true});
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(methodOverride("_method"));
