@@ -7,7 +7,7 @@
 			<form action="/deck" method="POST">
 				
 				<div class="form-group">
-					<select class="custom-select" name="card[category]" required>
+					<select class="custom-select" name="category" required>
   						<option disabled selected>Select a category for this question:</option>
   						<option value="Deep">Deep</option>
  						<option value="Random">Random</option>
@@ -19,8 +19,7 @@
 				</div>
 				
 				<div class="form-group">
-					<label>Question</label>
-					<input type="text" name="card[question]" placeholder="Question">
+					<input class="form-control" type="text" name="question" placeholder="Question">
 				</div>
 				
 				<div class="form-group">
